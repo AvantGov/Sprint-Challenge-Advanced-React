@@ -9,8 +9,10 @@ export const useDarkMode = () => {
 
     useEffect(() => {
         if (darkModeSetting === false) {
+            document.body.classList.remove('dark-mode')
             document.body.classList.add('day-mode')
         } else {
+            document.body.classList.remove('day-mode')
             document.body.classList.add('dark-mode')
         }
     })
