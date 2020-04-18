@@ -5,11 +5,15 @@ import { useEffect } from 'react';
 export const useDarkMode = () => {
     const [ darkModeSetting, setDarkModeSetting ] = useLocalStorage("darkmode");
 
-    const header = document.find(".header-container")
+    
 
     useEffect(() => {
-        if (darkModeSetting === true) {
-            header.classList.add(".dark-mode")
+        if (darkModeSetting === false) {
+            document.body.classList.add('day-mode')
+        } else {
+            document.body.classList.add('dark-mode')
         }
     })
+
+    return [ darkModeSetting, setDarkModeSetting ];
 }

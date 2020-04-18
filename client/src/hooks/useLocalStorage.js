@@ -5,7 +5,7 @@ export const useLocalStorage = ( key, initialValue ) => {
     const [ storedValue, setStoredValue ] = useState(() => {
 
         // * get item from local storage by key:
-        const item = window.localstorage.getItemBy(key)
+        const item = window.localStorage.getItem(key)
 
         // * parse and return stored JSON, or (if undefined) return the initial vsalue
         return item ? JSON.parse(item) : initialValue
