@@ -13,9 +13,15 @@ describe('Header Container', () => {
 
         expect(button.text()).toBe(' Mode')
     })
+
+    it(' button should toggle darkmode', () => {
+        const wrapper = shallow(<HeaderContainer />);
+        const button = wrapper.find('.header-container__button')
+        
+        button.simulate('click');
+
+        expect(document.body.classList).hasClass('dark-mode')
+    })
 })
-// it('should render when mounted', () => {
-//     const div = document.createElement('div');
-//     ReactDOM.render(<HeaderContainer />, div); 
-// })
+
 

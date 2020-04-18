@@ -9,7 +9,7 @@ const HeaderContainer = () => {
   const [ darkMode, setDarkMode ] = useDarkMode(false)
 
   const toggleMode = (event) => {
-    event.preventDefault();
+    // event.preventDefault();
     setDarkMode(!darkMode);
     console.log(darkMode);
   }  
