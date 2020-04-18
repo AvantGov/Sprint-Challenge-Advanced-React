@@ -5,13 +5,16 @@ import React from 'react';
 import "./CSS/index.css"
 
 // * components 
+import HeaderContainer from "./components/HeaderContainer";
+import CardContainer from "./components/CardContainer";
 
 
 
 function App() {
   return (
     <div className="App">
-     <h1>I AM THE APP</h1>
+      <HeaderContainer />
+      <CardContainer />
     </div>
   );
 }
