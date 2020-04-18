@@ -35,6 +35,7 @@ class CardContainer extends Component {
     render() {
         return (
             <div className="card-container">
+                {console.log(document)}
                 {this.state.data.map((player) => {
                     return (
                       <PlayerCard data={player} key={player.id} />

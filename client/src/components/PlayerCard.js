@@ -4,7 +4,7 @@ import React from 'react';
 
 const PlayerCard = (props) => {
 
-    console.log("card data:", props.data)
+    // console.log("card data:", props.data)
 
     return(
         <div className="player-card-container">
